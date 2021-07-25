@@ -1,16 +1,122 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <style>
         #Title {
-            text-align: center;
+            text-align: left;
+        }
+
+        h1,
+        p {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         }
+
+        #Title form label {
+            padding: 6px;
+            margin-top: 8px;
+            font-size: 17px;
+            border: none;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            cursor: text;
+        }
+
+        #SearchButton {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: #fff;
+            padding: 8px;
+            margin-top: 10px;
+            margin-left: 10px;
+            background: #000;
+            font-size: 20px;
+            border: none;
+            cursor: context-menu;
+            border: 20px;
+        }
+
+        #SearchButton:hover {
+            background: #555;
+        }
+
+        .expanddiv {
+            padding: 0 18px;
+            background-color: #f1f1f1;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .expand {
+            background-color: #777;
+            color: #fff;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .expand.active,
+        .expand:hover {
+            background-color: #555;
+        }
+
+        .expand:after {
+            content: "+";
+            color: white;
+            font-weight: bold;
+            float: right;
+            margin-left: 5px;
+        }
+
+        .expand.active:after {
+            content: "-";
+        }
     </style>
-  </head>
-  <body>
-      <div id="Title">
-        Crack Blog
-      </div>
-  </body>
+</head>
+
+<body>
+    <div id="Title">
+        <h1>Crack Blog</h1>
+        <form action="search.html" autocomplete="off">
+            <input type="checkbox" id="Crack專欄" name="s" value="Crack專欄">
+            <label for="s">#Crack專欄</label><br>
+            <button class="expand" type="button">體育</button>
+            <div class="expanddiv">
+                <input type="checkbox" id="港隊" name="s" value="港隊">
+                <label for="s">#港隊</label>
+                <input type="checkbox" id="足球" name="s" value="足球">
+                <label for="s">#足球</label>
+                <input type="checkbox" id="羽毛球" name="s" value="羽毛球">
+                <label for="s">#羽毛球</label>
+            </div>
+            <button class="expand" type="button">娛樂</button>
+            <div class="expanddiv">
+                <input type="checkbox" id="大叔的愛" name="s" value="大叔的愛">
+                <label for="s">#大叔的愛</label>
+            </div>
+            <script>
+                var acc = document.getElementsByClassName("expand");
+                var i;
+                for (i = 0; i < acc.length; i++) {
+                    acc[i].onclick = function () {
+                        this.classList.toggle("active");
+                        var div = this.nextElementSibling;
+                        if (div.style.maxHeight) {
+                            div.style.maxHeight = null;
+                        } else {
+                            div.style.maxHeight = div.scrollHeight + "px";
+                        }
+                    }
+                }
+            </script>
+            <button id="SearchButton" type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+
 </html>
