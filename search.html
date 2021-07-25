@@ -1,0 +1,61 @@
+<html>
+
+<head>
+    <style>
+        a,
+        h3 {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 25px;
+            text-decoration: none;
+        }
+    </style>
+    <script>
+        window.onload = () => {
+            const tab = {
+            "白先生連環不幸事件.html": [
+                "足球", "大叔的愛", "Crack專欄"
+            ],
+            "香港隊不要五毛.html": [
+                "港隊", "羽毛球", "Crack專欄"
+            ]
+        };
+        const query = window.location.search;
+        const params = new URLSearchParams(query);
+        var chosen = [];
+        if (params.has("s")) {
+            const s = params.getAll("s");
+            var i;
+            for (i in tab) {
+                var v = tab[i];
+                for (var w = 0, size = v.length; w < size; w++) {
+                    var j = v[w];
+                    if (s.includes(j) && !chosen.includes(i)) {
+                        chosen.push(i);
+                    };
+                };
+            };
+        };
+        if (chosen.length > 0) {
+            document.getElementById("none").remove()
+        };
+        for (var w = 0, size = chosen.length; w < size; w++) {
+            var j = chosen[w];
+            var div = document.createElement("div");
+            document.body.appendChild(div);
+            var a = document.createElement("a");
+            a.href = j;
+            a.innerHTML = j.slice(0, -5);
+            div.appendChild(a);
+        };
+        console.log(chosen);
+    };
+    </script>
+</head>
+
+<body>
+    <h3 id="none">
+        無相符項
+    </h3>
+</body>
+
+</html>
