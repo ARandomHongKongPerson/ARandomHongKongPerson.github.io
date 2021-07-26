@@ -1,4 +1,4 @@
-exports.tab = {
+var tab = {
             "白先生連環不幸事件.html": [
                 "足球", "大叔的愛", "Crack專欄"
             ],
