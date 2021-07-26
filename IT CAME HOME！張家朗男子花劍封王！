@@ -1,0 +1,34 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="/database/back.js"></script>
+</head>
+
+<body>
+    <h1>IT CAME HOME！張家朗男子花劍封王！</h1>
+    <h3>時間：7/26/2021 21:54</h3>
+    <h3>文：Crack</h3><br>
+    <h5>相關類別：
+        <a href="search.html?s=港隊">港隊</a>，
+        <a href="search.html?s=劍擊">劍擊</a>，
+        <a href="search.html?s=東京奧運2020">東京奧運2020</a>，
+        <a href="search.html?s=Crack專欄">Crack專欄</a>
+    </h5><br>
+    <img src="/images/72620212154-001.png" alt="附件一" style="float:top;border:5px solid black;display:block;">
+    <cite>附件一：張家朗成爲冠軍一刻</cite><br>
+    <p>劍神好波呀！今日舉行嘅男子花劍，24歲的張家朗一直披荊斬棘，闖進金牌戰，面對世界排名第七，力求衛冕的意大利好手Daniele Garozzo。但係張家朗並無辜負香港人的期望，發揮得淋漓盡致，以15比11登上世界之巔，成為第二位在奧運取得金牌的香港運動員。</p><br>
+    <p>五年前與今日對比，張家朗現在已不是當時那初出茅廬，顯得有點怯場的小伙子，他的技術與心理質素已經進步了許多。今天我們看到的絕對是當年的昇華，在晉級過程中，盡顯其實力。由32強以15：12戰勝法國老將Julien Mertine、16強以15：3大破世界「一哥」意大利名將Alessio Foconi、 8強反勝俄羅斯奧委會代表Kirill Borodachev，到4強以15：10淘汰捷克「長人」Alexander Choupenitch，這位香港劍手都展現出超強意志，打得愈來愈有信心。</p>
+    <img src="/images/72620212154-002.png" alt="附件二" style="float:top;border:5px solid black;display:block;">
+    <cite>附件二：張家朗打劍</cite><br>
+    <p>今仗，張家朗要面對的是上屆冠軍：意大利好手Daniele Garozzo。兩人過往2次交手，張家朗未嚐一勝，包括2013年日本格蘭披治賽小組賽負1：5，以及2017年俄羅斯聖彼德堡世界盃4強以12：15惜敗。</p><br>
+    <p>今仗，張家朗的打法比四強賽事保守，得分來源主要是防守突擊。比賽初段，受其打法影響，Daniele Garozzo在張家朗奪1分後連奪4分。張家朗調整心態後逐漸重拾節奏控制戰局，一步一步收復失地，再反超前，成功奪金，繼1996年阿特蘭大奧運滑浪風帆女將李麗珊後，事隔25年後再有香港運動員踏上奧運頒獎台最高台階，並獲得由恒基贊助的『精英運動員嘉許計劃獎金』頒發的500萬獎金。</p><br>
+    <p>賽後，劍神坦言今天背負著很大壓力，一方面希望盡量取得好成績，一方面害怕會辜負香港人的期望，但幸好有支持令自己不再害怕。他更公開向女友致謝，清楚她於錄影廠也非常緊張，多謝她鼓勵自己，陪伴著自己。他也很感謝他的教練時常叮囑他有什麼需要注意，使他在比賽中有更好表現。他同時希望自己可以保持現時佳態，延續奧運的好成績。</p>
+    <img src="/images/72620212154-003.png" alt="附件三" style="float:top;border:5px solid black;display:block;">
+    <cite>附件三：張家朗與教練合照</cite><br>
+    <button id="back" type="button" onclick="clicked()">回到首頁</button>
+
+
+</body>
+
+</html>
