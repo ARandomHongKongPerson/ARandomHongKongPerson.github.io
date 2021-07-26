@@ -19,54 +19,52 @@
     </style>
     <script>
         window.onload = () => {
-            const tab = {
-            "白先生連環不幸事件.html": [
-                "足球", "大叔的愛", "Crack專欄"
-            ],
-            "香港隊不要五毛.html": [
-                "港隊", "羽毛球", "Crack專欄"
-            ],
-            "英皇錦標賽馬日實況：雅大爺繼葉森打吡後再下一城.html": [
-                "英皇錦標", "Crack專欄"
-            ],
-            "華語天王周杰倫成為吸金王.html": [
-                "周杰倫", "Crack專欄"
-            ],
-            "大同新邨聖德肋撒幼稚園再傳醜聞 校長要求老師拍兒童裸照.html": [
-                "本港", "靚仔著作"
-            ]
-        };
-        const query = window.location.search;
-        const params = new URLSearchParams(query);
-        var chosen = [];
-        if (params.has("s")) {
-            const s = params.getAll("s");
-            var i;
-            for (i in tab) {
-                var v = tab[i];
-                for (var w = 0, size = v.length; w < size; w++) {
-                    var j = v[w];
-                    if (s.includes(j) && !chosen.includes(i)) {
-                        chosen.push(i);
+            var xmlhttp;
+            var tab;
+            if (window.XMLHttpRequest) {
+                xmlhttp = new XMLHttpRequest();
+            } else {
+                xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+            };
+            xmlhttp.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    // Typical action to be performed when the document is ready:
+                    tab = xmlhttp.responseText;
+                }
+            };
+            xmlhttp.open("GET", "/database/results.json", true);
+            xmlhttp.send();
+            const query = window.location.search;
+            const params = new URLSearchParams(query);
+            var chosen = [];
+            if (params.has("s")) {
+                const s = params.getAll("s");
+                var i;
+                for (i in tab) {
+                    var v = tab[i];
+                    for (var w = 0, size = v.length; w < size; w++) {
+                        var j = v[w];
+                        if (s.includes(j) && !chosen.includes(i)) {
+                            chosen.push(i);
+                        };
                     };
                 };
             };
+            if (chosen.length > 0) {
+                document.getElementById("none").remove()
+            };
+            for (var w = 0, size = chosen.length; w < size; w++) {
+                var j = chosen[w];
+                var div = document.createElement("div");
+                document.body.appendChild(div);
+                var a = document.createElement("a");
+                a.target = "_self"
+                a.href = j;
+                a.innerHTML = j.slice(0, -5);
+                div.appendChild(a);
+            };
+            console.log(chosen);
         };
-        if (chosen.length > 0) {
-            document.getElementById("none").remove()
-        };
-        for (var w = 0, size = chosen.length; w < size; w++) {
-            var j = chosen[w];
-            var div = document.createElement("div");
-            document.body.appendChild(div);
-            var a = document.createElement("a");
-            a.target = "_self"
-            a.href = j;
-            a.innerHTML = j.slice(0, -5);
-            div.appendChild(a);
-        };
-        console.log(chosen);
-    };
     </script>
 </head>
 
