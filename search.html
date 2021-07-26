@@ -18,23 +18,9 @@
             cursor: default;
         }
     </style>
+    <script type="text/javascript" src="/database/results.js"></script>
     <script>
         window.onload = () => {
-            var xmlhttp;
-            var tab;
-            if (window.XMLHttpRequest) {
-                xmlhttp = new XMLHttpRequest();
-            } else {
-                xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
-            };
-            xmlhttp.onreadystatechange = function () {
-                if (this.readyState == 4 && this.status == 200) {
-                    console.log(JSON.parse(xmlhttp.responseText));
-                    tab = JSON.parse(xmlhttp.responseText);
-                }
-            };
-            xmlhttp.open("GET", "/database/results.json", true);
-            xmlhttp.send();
             const query = window.location.search;
             const params = new URLSearchParams(query);
             var chosen = [];
