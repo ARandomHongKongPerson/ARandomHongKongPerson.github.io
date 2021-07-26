@@ -1,0 +1,95 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="/database/back.js"></script>
+</head>
+
+<body>
+    <h1>對張家朗的傾慕以及期望</h1>
+    <h3>時間：7/26/2021 19:29</h3>
+    <h3>文：aquazure</h3><br>
+    <h5>相關類別：
+        <a href="search.html?s=港隊">港隊</a>，
+        <a href="search.html?s=劍擊">劍擊</a>，
+        <a href="search.html?s=東京奧運2020">東京奧運2020</a>，
+        <a href="search.html?s=aquazure出品">aquazure出品</a>
+    </h5><br>
+    <p>It's coming home
+        It's coming home
+        It's coming
+        FENCING's coming home
+        It's coming home
+        It's coming home
+        It's coming
+        FENCING's coming home
+        It's coming home
+        It's coming home
+        It's coming
+        FENCING's coming home
+        It's coming home
+        It's coming home
+        It's coming
+        FENCING's coming home
+        Everyone seems to know the score
+        They've seen it all before
+        They just know
+        They're so sure
+        That HK's gonna throw it away
+        Gonna blow it away
+        But I know they can play
+        'Cause I remember
+        HK on a shirt
+        FENCING still gleaming
+        N years of hurt
+        Never stopped me dreaming
+        So many jokes, so many sneers
+        But all those oh-so-nears
+        Wear you down
+        Through the years
+        But I still see that lose by Czech guy
+        And when CHEUNG KA LONG won
+        CHEUNG fighting the opponents
+        And HongKongers Dancing
+        HK on a shirt
+        FENCING still gleaming
+        N years of hurt
+        Never stopped me dreaming
+        I know that was then but it could be again
+        It's coming home
+        It's coming
+        FENCING's coming home
+        It's coming home
+        It's coming home
+        It's coming
+        FENCING's coming home
+        It's coming home
+        It's coming home
+        It's coming
+        Football's coming home
+        It's coming home
+        It's coming home
+        It's coming
+        FENCING's coming home 
+        HK on a shirt
+        FENCING still gleaming
+        N years of hurt
+        Never stopped me dreaming
+        HK on a shirt
+        FENCING still gleaming
+        N years of hurt
+        Never stopped me dreaming
+        HK on a shirt
+        FENCING still gleaming
+        N years of hurt
+        Never stopped me dreaming
+        HK on a shirt
+        FENCING still gleaming
+        N years of hurt
+        Never stopped me dreaming</p>
+    <button id="back" type="button" onclick="clicked()">回到首頁</button>
+
+
+</body>
+
+</html>
