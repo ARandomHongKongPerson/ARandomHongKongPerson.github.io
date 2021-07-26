@@ -1,5 +1,5 @@
 window.onload = () => {
     clicked = () => {
-        window.location = "index.html"
+        window.location = "/"
     };
 };
