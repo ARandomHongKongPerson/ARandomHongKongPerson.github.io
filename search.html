@@ -30,9 +30,9 @@
                 for (i in tab) {
                     var x = false;
                     var v = tab[i];
-                    for (var w = 0, size = v.length; w < size; w++) {
-                        var j = v[w];
-                        if (s.includes(j) && !chosen.includes(i)) {
+                    for (var w = 0, size = s.length; w < size; w++) {
+                        var j = s[w];
+                        if (v.includes(s) && !chosen.includes(i)) {
                             x = true;
                         } else {
                             x = false;
