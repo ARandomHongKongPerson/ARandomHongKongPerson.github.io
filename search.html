@@ -28,12 +28,18 @@
                 const s = params.getAll("s");
                 var i;
                 for (i in tab) {
+                    var x = false;
                     var v = tab[i];
                     for (var w = 0, size = v.length; w < size; w++) {
                         var j = v[w];
                         if (s.includes(j) && !chosen.includes(i)) {
-                            chosen.push(i);
+                            x = true;
+                        } else {
+                            x = false;
                         };
+                    };
+                    if (x) {
+                        chosen.push(i);
                     };
                 };
             };
