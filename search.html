@@ -29,7 +29,7 @@
             xmlhttp.onreadystatechange = function () {
                 if (this.readyState == 4 && this.status == 200) {
                     // Typical action to be performed when the document is ready:
-                    tab = xmlhttp.responseText;
+                    tab = JSON.parse(xmlhttp.responseText);
                 }
             };
             xmlhttp.open("GET", "/database/results.json", true);
